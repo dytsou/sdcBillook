@@ -4,7 +4,7 @@ export const userTypes = `
         username: String!
         password: String
         email: String!
-        
+        createdBooks: [Book!]!
     }
 
     input UserInput {

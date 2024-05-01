@@ -1,8 +1,10 @@
-import userResolver from './user.js';
+import userResolvers from './user.js';
+import bookResolvers from './book.js';
 
 // Root resolver
 const root = {
-    ...userResolver,
+    ...userResolvers,
+    ...bookResolvers,
 };
 
 export default root;

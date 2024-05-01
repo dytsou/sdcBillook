@@ -28,5 +28,38 @@ const getListTransformedUser = async userIDs => {
     }
 }
 
+const transformBook = book => {
+    return {
+        ...book._doc,
+        _id: book.id,
+        creator: getSingleTransformedUser.bind(this, book._doc.creator),
+        membersList: getListTransformedUser.bind(this, book._doc.membersList),
+        paymentsList: book._doc.paymentsList.map(payment => {
+            return transformPayment(payment);
+        }),
+    };
+}
 
-export { transformUser, getSingleTransformedUser, getListTransformedUser };
+const transformPayment = payment => {
+    return {
+        ...payment._doc,
+        _id: payment.id,
+        paidBy: getSingleTransformedUser.bind(this, payment._doc.paidBy),
+        sharedBy: getListTransformedUser.bind(this, payment._doc.sharedBy),
+    };
+}
+
+const getListTransformedBooks = async bookIDs => {
+    try {
+        const books = await Book.find({ _id: { $in: bookIDs } });
+        return books.map(book => {
+            return transformBook(book);
+        });
+    } catch (err) {
+        throw err;
+    }
+}
+
+
+
+export { transformUser, getSingleTransformedUser, getListTransformedUser, transformBook, transformPayment, getListTransformedBooks };

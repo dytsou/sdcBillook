@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom';
 import logo from '../Assets/logo.png';
+import AuthContext from '../Store/AuthContent';
+import { useContext } from 'react';
 
 function Navbar() {
+    const auth = useContext(AuthContext);
+    let Login_Logout_Button = <Link to="/login">LOGIN</Link>
+    if(auth.isLoggedIn) {
+        Login_Logout_Button = <Link to="/" onClick={auth.logout}>LOGOUT</Link>
+    }
     return (
         <div className="flex justify-between items-center h-18 px-4  text-gray-dark border-b-2 border-gray-dark">
             <img className="my-1 w-14 h-12" src={logo} alt=""></img>

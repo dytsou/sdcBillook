@@ -21,4 +21,16 @@ export const userTypes = `
     type RootMutation {
         createUser(userInput: UserInput!): User
     }
+
+    type AuthData {
+        userId: ID!
+        token: String!
+        tokenExpiration: Int!
+    }
+    
+    type RootQuery {
+        users: [User!]!
+        user(userId: ID!): User!
+        login(email: String!, password: String!): AuthData!
+    }
 `

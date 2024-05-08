@@ -21,9 +21,39 @@ const query = {
     },
     user: async args => {
         try {
-            const user = await models.User.findById(args.userID)
+            const user = await models.User.findById(args.userId)
+            if (!user) {
+                throw new Error('User not found');
+            }
             return transformUser(user);
         } catch (err) {
+            throw err;
+        }
+    },
+    login: async args => 
+    {
+        try 
+        {
+            const user = await models.User.findOne({email: args.email});
+            if (!user) {
+                throw new Error('User does not exist');
+            }
+            const isEqual = await bcrypt.compare(args.password, user.password);
+            if (!isEqual) {
+                throw new Error('Password is incorrect');
+            }
+            const token = jwt.sign({
+                    userId: user.id, 
+                    email: user.email, 
+                    username: user.username
+                }, 
+                'genshinImpactActivate',{
+                    expiresIn: '1h'
+                }
+            );
+            return { userId: user.id, token: token, tokenExpiration: 1 }
+        } 
+        catch (err) {
             throw err;
         }
     },

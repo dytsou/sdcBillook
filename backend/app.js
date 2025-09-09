@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import { graphqlHTTP } from 'express-graphql';
+import rateLimit from 'express-rate-limit';
 import mongoose from 'mongoose';
 import { print, buildSchema } from 'graphql';
 import dotenv from 'dotenv';
@@ -17,6 +18,16 @@ const port = process.env.PORT || 5000;
 const graphqlTypedef = typedef;
 const graphqlSchema = buildSchema(print(graphqlTypedef))
 const graphqlResolvers = resolvers;
+
+// Configure rate limiting: 100 requests per 15 minutes per IP
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 requests per windowMs
+  standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+  legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+});
+
+app.use(limiter);
 app.use(bodyParser.json());
 app.use(enableCors);
 app.use(isAuth);

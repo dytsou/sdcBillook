@@ -4,23 +4,22 @@ import AuthContext from '../../Store/AuthContent';
 
 const Login = () => {
     const auth = useContext(AuthContext);
-    console.log(auth)
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
-    
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-    
-        if(!email || !password) {
+
+        if (!email || !password) {
             return;
         }
-        if(email.trim().length === 0 || password.trim().length === 0) {
+        if (email.trim().length === 0 || password.trim().length === 0) {
             return;
         }
-    
-    
+
+
         try {
             const response = await fetch('http://localhost:8000/graphql', {
                 method: 'POST',
@@ -39,16 +38,15 @@ const Login = () => {
                     `
                 })
             })
-            if(response.status !== 200 && response.status !== 201) {
+            if (response.status !== 200 && response.status !== 201) {
                 throw new Error('Failed to fetch data');
             }
             const authData = await response.json();
-            console.log(authData);
             auth.login(authData.data.login.token, authData.data.login.userId);
-        } catch(err) {
+        } catch (err) {
             console.error(err);
         }
-    
+
     }
 
     return (
@@ -65,11 +63,11 @@ const Login = () => {
                 {/* email and password section */}
 
                 <div className='px-[4%] mt-[10%] mb-[4%]'>
-                    <input ref={emailRef} type='text' placeholder='Email' className='bg-[#D9D9D9] rounded-md px-2 py-2 w-full'  />
+                    <input ref={emailRef} type='text' placeholder='Email' className='bg-[#D9D9D9] rounded-md px-2 py-2 w-full' />
                 </div>
 
                 <div className='px-[4%]'>
-                    <input ref={passwordRef} type='password' placeholder='Password' className='bg-[#D9D9D9] rounded-md px-2 py-2 w-full'  />
+                    <input ref={passwordRef} type='password' placeholder='Password' className='bg-[#D9D9D9] rounded-md px-2 py-2 w-full' />
                 </div>
                 <button className='flex text-sm font-bold text-[#EE7214] px-2 py-0.8'>
                     Forget Password?
@@ -80,7 +78,7 @@ const Login = () => {
                 <button className='text-center text-md font-bold text-white bg-[#EE7214] rounded-lg my-[4%] w-full py-1'>
                     Sign In
                 </button>
-                
+
                 <div className="flex items-center justify-center my-2">
                     <div className="flex-grow border-t border-gray-300"></div>
                     <span className="flex-shrink mx-4 text-gray-700">or</span>
@@ -88,7 +86,7 @@ const Login = () => {
                 </div>
 
                 <p className='text-center pt-4'>
-                    do not have an account? 
+                    do not have an account?
                     <Link to='/signup' className='text-[#EE7214] font-bold'> Sign Up</Link>
                 </p>
             </form>

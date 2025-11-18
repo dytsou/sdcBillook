@@ -34,6 +34,11 @@
     "@jest/globals": "^30.2.0",
     "supertest": "^7.1.4"
   },
+  "pnpm": {
+    "overrides": {
+      "glob": "^11.1.0"
+    }
+  },
   "jest": {
     "testEnvironment": "node",
     "moduleNameMapper": {

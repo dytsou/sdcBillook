@@ -13,10 +13,7 @@ updates:
       include: "scope"
     labels:
       - "dependencies"
-    ignore:
-      # Ignore major version updates for critical packages (uncomment if needed)
-      # - dependency-name: "express"
-      #   update-types: ["version-update:semver-major"]
+    ignore: []
   
   # Frontend dependencies
   - package-ecosystem: "npm"
@@ -31,10 +28,5 @@ updates:
       include: "scope"
     labels:
       - "dependencies"
-    ignore:
-      # Ignore major version updates for critical packages (uncomment if needed)
-      # - dependency-name: "react"
-      #   update-types: ["version-update:semver-major"]
-      # - dependency-name: "react-dom"
-      #   update-types: ["version-update:semver-major"]
+    ignore: []
 

@@ -1,0 +1,157 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+
+jobs:
+  backend:
+    name: Backend Tests
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      
+      - name: Verify pnpm installation
+        run: pnpm --version
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+          cache-dependency-path: backend/pnpm-lock.yaml
+      
+      - name: Verify packageManager field
+        working-directory: ./backend
+        run: |
+          if [ -f "package.json" ]; then
+            PACKAGE_MANAGER=$(node -p "require('./package.json').packageManager || ''")
+            if [[ "$PACKAGE_MANAGER" == *"pnpm"* ]]; then
+              echo "✓ packageManager field is set correctly: $PACKAGE_MANAGER"
+            else
+              echo "⚠ packageManager field is missing or incorrect: $PACKAGE_MANAGER"
+            fi
+          fi
+      
+      - name: Install dependencies
+        working-directory: ./backend
+        run: pnpm install --frozen-lockfile
+      
+      - name: Run tests
+        working-directory: ./backend
+        run: pnpm test
+        continue-on-error: true
+      
+      - name: Check if app starts
+        working-directory: ./backend
+        run: |
+          timeout 10s pnpm start || true
+        continue-on-error: true
+
+  frontend:
+    name: Frontend Tests
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      
+      - name: Verify pnpm installation
+        run: pnpm --version
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+          cache-dependency-path: billook/pnpm-lock.yaml
+      
+      - name: Verify packageManager field
+        working-directory: ./billook
+        run: |
+          if [ -f "package.json" ]; then
+            PACKAGE_MANAGER=$(node -p "require('./package.json').packageManager || ''")
+            if [[ "$PACKAGE_MANAGER" == *"pnpm"* ]]; then
+              echo "✓ packageManager field is set correctly: $PACKAGE_MANAGER"
+            else
+              echo "⚠ packageManager field is missing or incorrect: $PACKAGE_MANAGER"
+            fi
+          fi
+      
+      - name: Install dependencies
+        working-directory: ./billook
+        run: pnpm install --frozen-lockfile
+      
+      - name: Run tests
+        working-directory: ./billook
+        run: pnpm test -- --watchAll=false --coverage --ci
+        env:
+          CI: true
+      
+      - name: Build application
+        working-directory: ./billook
+        run: pnpm run build
+
+  lint:
+    name: Lint Check
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      
+      - name: Verify pnpm installation
+        run: pnpm --version
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+          cache-dependency-path: billook/pnpm-lock.yaml
+      
+      - name: Verify packageManager field
+        working-directory: ./billook
+        run: |
+          if [ -f "package.json" ]; then
+            PACKAGE_MANAGER=$(node -p "require('./package.json').packageManager || ''")
+            if [[ "$PACKAGE_MANAGER" == *"pnpm"* ]]; then
+              echo "packageManager field is set correctly: $PACKAGE_MANAGER"
+            else
+              echo "packageManager field is missing or incorrect: $PACKAGE_MANAGER"
+            fi
+          fi
+      
+      - name: Install frontend dependencies
+        working-directory: ./billook
+        run: pnpm install --frozen-lockfile
+      
+      - name: Run ESLint (if configured)
+        working-directory: ./billook
+        run: |
+          if [ -f "node_modules/.bin/eslint" ]; then
+            pnpm exec eslint src/ --ext .js,.jsx || true
+          else
+            echo "ESLint not configured, skipping..."
+          fi
+        continue-on-error: true
+

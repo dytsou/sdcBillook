@@ -13,7 +13,6 @@ updates:
       include: "scope"
     labels:
       - "dependencies"
-    ignore: []
   
   # Frontend dependencies
   - package-ecosystem: "npm"
@@ -28,5 +27,4 @@ updates:
       include: "scope"
     labels:
       - "dependencies"
-    ignore: []
 

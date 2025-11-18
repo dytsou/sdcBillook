@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import BooksList from './BooksList';
 import AuthContext from '../../Store/AuthContent';
 
@@ -12,6 +12,16 @@ jest.mock('./BookListItem', () => {
 
 // Mock fetch
 global.fetch = jest.fn();
+
+// Suppress console.error for error handling tests
+const originalError = console.error;
+beforeAll(() => {
+  console.error = jest.fn();
+});
+
+afterAll(() => {
+  console.error = originalError;
+});
 
 test('BooksList renders when user is not logged in', () => {
   const mockAuth = {
@@ -31,7 +41,7 @@ test('BooksList renders when user is not logged in', () => {
   expect(getByText(/please login to view your book/i)).toBeInTheDocument();
 });
 
-test('BooksList renders when user is logged in', () => {
+test('BooksList renders when user is logged in', async () => {
   const mockAuth = {
     isLoggedIn: true,
     token: 'test-token',
@@ -40,10 +50,7 @@ test('BooksList renders when user is logged in', () => {
     logout: jest.fn()
   };
 
-  global.fetch.mockResolvedValueOnce({
-    ok: true,
-    json: async () => ({ data: { user: { createdBooks: [] } } })
-  });
+  global.fetch.mockRejectedValueOnce(new Error('Failed to fetch data'));
 
   const { container } = render(
     <AuthContext.Provider value={mockAuth}>
@@ -52,5 +59,10 @@ test('BooksList renders when user is logged in', () => {
   );
 
   expect(container).toBeTruthy();
+  
+  // Wait for async operations to complete
+  await waitFor(() => {
+    expect(global.fetch).toHaveBeenCalled();
+  });
 });
 

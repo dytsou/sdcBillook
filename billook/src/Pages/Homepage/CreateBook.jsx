@@ -62,7 +62,6 @@ function CreateBook() {
                 throw new Error('Failed to fetch data');
             }
             const responseData = await request.json();
-            console.log(responseData);
         } catch(err) {
             console.error(err);
         }

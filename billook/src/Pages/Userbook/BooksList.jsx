@@ -15,7 +15,6 @@ function BooksList() {
     const fetchBookList = async () => {
         if(!auth.isLoggedIn) return;
         try {
-            console.log(auth.userId);
             const request = await fetch('http://localhost:8000/graphql', {
                 method: 'POST',
                 headers: {
@@ -40,7 +39,6 @@ function BooksList() {
                 throw new Error('Failed to fetch data');
             }
             const responseData = await request.json();
-            console.log(responseData);
             setBooksData(responseData.data.user.createdBooks.map((book) => {
                 return {
                     id: book._id,

@@ -24,7 +24,7 @@ function Navbar() {
                     <Link to="/joinbook">JOIN BOOK</Link>
                 </li>
                 <li className="mx-4">
-                    <Link to="/login">LOGIN</Link>
+                    {Login_Logout_Button}
                 </li>
             </ul>
         </div>

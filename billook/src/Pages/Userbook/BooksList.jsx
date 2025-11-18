@@ -1,18 +1,11 @@
 import BookListItem from "./BookListItem";
-import {useContext, useEffect, useState} from "react";
+import {useContext, useEffect, useState, useCallback} from "react";
 import AuthContext from "../../Store/AuthContent";
-
-const BookData = [
-    {id: 1, name: "Book 1", description: "Book Description 1", image: "https://placehold.co/400"},
-    {id: 2, name: "Book 2", description: "Book Description 2", image: "https://placehold.co/500"},
-    {id: 3, name: "Book 3", description: "Book Description 3", image: "https://placehold.co/600"},
-    {id: 4, name: "Book 4", description: "Book Description 4", image: "https://placehold.co/700"},
-]
 
 function BooksList() {
     const auth = useContext(AuthContext);
     const [booksData, setBooksData] = useState([]);
-    const fetchBookList = async () => {
+    const fetchBookList = useCallback(async () => {
         if(!auth.isLoggedIn) return;
         try {
             const request = await fetch('http://localhost:8000/graphql', {
@@ -50,10 +43,10 @@ function BooksList() {
         } catch(err) {
             console.error(err);
         }
-    }
+    }, [auth.isLoggedIn, auth.token, auth.userId]);
     useEffect(() => {
         fetchBookList();
-    }, []);
+    }, [fetchBookList]);
     if(!auth.isLoggedIn) {
         return (
             <div className='bg-gray-light px-8 py-8 rounded-2xl'>

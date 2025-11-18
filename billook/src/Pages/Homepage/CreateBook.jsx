@@ -6,14 +6,14 @@ function CreateBook() {
     // const [bookName, setBookName] = useState("Your book name");
     const [photoName, setPhotoName] = useState("No file chosen");
     // const [bulletinBoard, setBulletinBoard] = useState("Enter group announcement here...");
-    const [file, setFile] = useState(null);
     const bookNameRef = useRef(null);
     const bulletinBoardRef = useRef(null);
     const auth = useContext(AuthContext);
 
     function handleFileChange(e) {
-        setFile(e.target.files[0]);
-        setPhotoName(e.target.files[0].name);
+        if (e.target.files && e.target.files[0]) {
+            setPhotoName(e.target.files[0].name);
+        }
     }
 
     const handleSubmit = async (e) => {
@@ -61,7 +61,7 @@ function CreateBook() {
             if(request.status !== 200 && request.status !== 201) {
                 throw new Error('Failed to fetch data');
             }
-            const responseData = await request.json();
+            await request.json();
         } catch(err) {
             console.error(err);
         }

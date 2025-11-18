@@ -5,7 +5,7 @@ updates:
     directory: "/backend"
     schedule:
       interval: "weekly"
-      day: "monday"
+      day: "friday"
       time: "09:00"
     open-pull-requests-limit: 10
     commit-message:
@@ -13,7 +13,6 @@ updates:
       include: "scope"
     labels:
       - "dependencies"
-      - "backend"
     ignore:
       # Ignore major version updates for critical packages (uncomment if needed)
       # - dependency-name: "express"
@@ -24,7 +23,7 @@ updates:
     directory: "/billook"
     schedule:
       interval: "weekly"
-      day: "monday"
+      day: "friday"
       time: "09:00"
     open-pull-requests-limit: 10
     commit-message:
@@ -32,7 +31,6 @@ updates:
       include: "scope"
     labels:
       - "dependencies"
-      - "frontend"
     ignore:
       # Ignore major version updates for critical packages (uncomment if needed)
       # - dependency-name: "react"

@@ -44,8 +44,6 @@ test('Navbar renders when user is logged in', () => {
   );
 
   expect(screen.getByText('BILLOOK')).toBeInTheDocument();
-  // Note: The Navbar component currently always shows LOGIN regardless of auth state
-  // (Login_Logout_Button variable is created but not used in the JSX)
-  expect(screen.getByText('LOGIN')).toBeInTheDocument();
+  expect(screen.getByText('LOGOUT')).toBeInTheDocument();
 });
 

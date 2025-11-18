@@ -49,7 +49,7 @@
   "pnpm": {
     "overrides": {
       "nth-check": "^2.1.1",
-      "glob": "^11.1.0"
+      "sucrase>glob": "^11.1.0"
     }
   }
 }

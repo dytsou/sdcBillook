@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
+  "packageManager": "pnpm@8.15.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_OPTIONS=--experimental-vm-modules pnpm exec jest",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules pnpm exec jest --watch",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules pnpm exec jest --coverage",
     "dev": "nodemon app.js",
     "start": "node app.js"
   },
@@ -25,5 +28,21 @@
     "express-rate-limit": "^8.1.0"
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@jest/globals": "^29.7.0",
+    "supertest": "^7.1.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "^(\\.{1,2}/.*)\\.js$": "$1"
+    },
+    "transform": {},
+    "testMatch": [
+      "**/__tests__/**/*.js",
+      "**/?(*.)+(spec|test).js"
+    ]
+  }
 }

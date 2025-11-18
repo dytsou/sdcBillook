@@ -42,7 +42,7 @@ SDC Billook is a full-stack web application that helps users manage and track th
 ### Prerequisites
 - Node.js (v14 or higher)
 - MongoDB installed and running
-- npm or yarn package manager
+- pnpm package manager
 
 ### Installation
 
@@ -55,13 +55,13 @@ cd sdcBillook
 2. Install frontend dependencies:
 ```bash
 cd billook
-npm install
+pnpm install
 ```
 
 3. Install backend dependencies:
 ```bash
 cd ../backend
-npm install
+pnpm install
 ```
 
 4. Create a `.env` file in the backend directory with your environment variables:
@@ -76,13 +76,13 @@ PORT=4000
 1. Start the backend server:
 ```bash
 cd backend
-npm run dev
+pnpm run dev
 ```
 
 2. Start the frontend development server:
 ```bash
 cd billook
-npm start
+pnpm start
 ```
 
 The frontend application will be available at `http://localhost:3000` and the backend GraphQL API at `http://localhost:4000/graphql`.

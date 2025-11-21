@@ -40,7 +40,7 @@ dependencies:
     version: 9.0.2
   mongoose:
     specifier: ^8.2.0
-    version: 8.20.0
+    version: 8.20.1
   nodemon:
     specifier: ^3.1.0
     version: 3.1.11
@@ -2735,8 +2735,8 @@ packages:
       mongodb-connection-string-url: 3.0.2
     dev: false
 
-  /mongoose@8.20.0:
-    resolution: {integrity: sha512-SxqNb8yx+VOjIOx2l7HqkGvYuLC/T85d+jPvqGDdUbKJFz/5PVSsVxQzypQsX7chenYvq5bd8jIr4LtunedE7g==}
+  /mongoose@8.20.1:
+    resolution: {integrity: sha512-G+n3maddlqkQrP1nXxsI0q20144OSo+pe+HzRRGqaC4yK3FLYKqejqB9cbIi+SX7eoRsnG23LHGYNp8n7mWL2Q==}
     engines: {node: '>=16.20.1'}
     dependencies:
       bson: 6.10.4

@@ -40,7 +40,7 @@ dependencies:
     version: 9.0.2
   mongoose:
     specifier: ^9.0.0
-    version: 9.0.0
+    version: 9.0.1
   nodemon:
     specifier: ^3.1.0
     version: 3.1.11
@@ -759,8 +759,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.5.5
     dev: true
 
-  /@mongodb-js/saslprep@1.3.2:
-    resolution: {integrity: sha512-QgA5AySqB27cGTXBFmnpifAi7HxoGUeezwo6p9dI03MuDB6Pp33zgclqVb6oVK3j6I9Vesg0+oojW2XxB59SGg==}
+  /@mongodb-js/saslprep@1.4.0:
+    resolution: {integrity: sha512-ZHzx7Z3rdlWL1mECydvpryWN/ETXJiCxdgQKTAH+djzIPe77HdnSizKBDi1TVDXZjXyOj2IqEG/vPw71ULF06w==}
     dependencies:
       sparse-bitfield: 3.0.3
     dev: false
@@ -2734,13 +2734,13 @@ packages:
       socks:
         optional: true
     dependencies:
-      '@mongodb-js/saslprep': 1.3.2
+      '@mongodb-js/saslprep': 1.4.0
       bson: 7.0.0
       mongodb-connection-string-url: 7.0.0
     dev: false
 
-  /mongoose@9.0.0:
-    resolution: {integrity: sha512-J6wTGC8/hSFpy9K6kPbKDnBNoUcX4iOGCasUrRzlSKdwdVNxdscLA4oHKOQwJlHqh/TxDNg+Uzg6koCyCKP0wA==}
+  /mongoose@9.0.1:
+    resolution: {integrity: sha512-aHPfQx2YX5UwAmMVud7OD4lIz9AEO4jI+oDnRh3lPZq9lrKTiHmOzszVffDMyQHXvrf4NXsJ34kpmAhyYAZGbw==}
     engines: {node: '>=20.19.0'}
     dependencies:
       kareem: 3.0.0

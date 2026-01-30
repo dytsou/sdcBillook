@@ -17,7 +17,7 @@ dependencies:
     version: 6.9.1
   '@testing-library/react':
     specifier: ^16.3.2
-    version: 16.3.2(@testing-library/dom@10.4.1)(react-dom@19.2.3)(react@19.2.3)
+    version: 16.3.2(@testing-library/dom@10.4.1)(react-dom@19.2.4)(react@19.2.4)
   '@testing-library/user-event':
     specifier: ^14.6.1
     version: 14.6.1(@testing-library/dom@10.4.1)
@@ -31,20 +31,20 @@ dependencies:
     specifier: ^8.4.39
     version: 8.5.6
   react:
-    specifier: ^19.2.3
-    version: 19.2.3
+    specifier: ^19.2.4
+    version: 19.2.4
   react-dom:
-    specifier: ^19.2.3
-    version: 19.2.3(react@19.2.3)
+    specifier: ^19.2.4
+    version: 19.2.4(react@19.2.4)
   react-icons:
     specifier: ^5.2.1
-    version: 5.5.0(react@19.2.3)
+    version: 5.5.0(react@19.2.4)
   react-router-dom:
     specifier: ^7.13.0
-    version: 7.13.0(react-dom@19.2.3)(react@19.2.3)
+    version: 7.13.0(react-dom@19.2.4)(react@19.2.4)
   react-scripts:
     specifier: ^5.0.1
-    version: 5.0.1(@babel/plugin-syntax-flow@7.28.6)(@babel/plugin-transform-react-jsx@7.28.6)(eslint@8.57.1)(react@19.2.3)(typescript@5.9.3)
+    version: 5.0.1(@babel/plugin-syntax-flow@7.28.6)(@babel/plugin-transform-react-jsx@7.28.6)(eslint@8.57.1)(react@19.2.4)(typescript@5.9.3)
   web-vitals:
     specifier: ^5.1.0
     version: 5.1.0
@@ -2715,7 +2715,7 @@ packages:
       redent: 3.0.0
     dev: false
 
-  /@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(react-dom@19.2.3)(react@19.2.3):
+  /@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(react-dom@19.2.4)(react@19.2.4):
     resolution: {integrity: sha512-XU5/SytQM+ykqMnAnvB2umaJNIOsLF3PVv//1Ew4CTcpz0/BRyy/af40qqrt7SjKpDdT1saBMc42CUok5gaw+g==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -2732,8 +2732,8 @@ packages:
     dependencies:
       '@babel/runtime': 7.28.6
       '@testing-library/dom': 10.4.1
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
     dev: false
 
   /@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1):
@@ -9335,12 +9335,12 @@ packages:
       - vue-template-compiler
     dev: false
 
-  /react-dom@19.2.3(react@19.2.3):
-    resolution: {integrity: sha512-yELu4WmLPw5Mr/lmeEpox5rw3RETacE++JgHqQzd2dg+YbJuat3jH4ingc+WPZhxaoFzdv9y33G+F7Nl5O0GBg==}
+  /react-dom@19.2.4(react@19.2.4):
+    resolution: {integrity: sha512-AXJdLo8kgMbimY95O2aKQqsz2iWi9jMgKJhRBAxECE4IFxfcazB2LmzloIoibJI3C12IlY20+KFaLv+71bUJeQ==}
     peerDependencies:
-      react: ^19.2.3
+      react: ^19.2.4
     dependencies:
-      react: 19.2.3
+      react: 19.2.4
       scheduler: 0.27.0
     dev: false
 
@@ -9348,12 +9348,12 @@ packages:
     resolution: {integrity: sha512-SN/U6Ytxf1QGkw/9ve5Y+NxBbZM6Ht95tuXNMKs8EJyFa/Vy/+Co3stop3KBHARfn/giv+Lj1uUnTfOJ3moFEQ==}
     dev: false
 
-  /react-icons@5.5.0(react@19.2.3):
+  /react-icons@5.5.0(react@19.2.4):
     resolution: {integrity: sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==}
     peerDependencies:
       react: '*'
     dependencies:
-      react: 19.2.3
+      react: 19.2.4
     dev: false
 
   /react-is@16.13.1:
@@ -9373,19 +9373,19 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /react-router-dom@7.13.0(react-dom@19.2.3)(react@19.2.3):
+  /react-router-dom@7.13.0(react-dom@19.2.4)(react@19.2.4):
     resolution: {integrity: sha512-5CO/l5Yahi2SKC6rGZ+HDEjpjkGaG/ncEP7eWFTvFxbHP8yeeI0PxTDjimtpXYlR3b3i9/WIL4VJttPrESIf2g==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
     dependencies:
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
-      react-router: 7.13.0(react-dom@19.2.3)(react@19.2.3)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+      react-router: 7.13.0(react-dom@19.2.4)(react@19.2.4)
     dev: false
 
-  /react-router@7.13.0(react-dom@19.2.3)(react@19.2.3):
+  /react-router@7.13.0(react-dom@19.2.4)(react@19.2.4):
     resolution: {integrity: sha512-PZgus8ETambRT17BUm/LL8lX3Of+oiLaPuVTRH3l1eLvSPpKO3AvhAEb5N7ihAFZQrYDqkvvWfFh9p0z9VsjLw==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
@@ -9396,12 +9396,12 @@ packages:
         optional: true
     dependencies:
       cookie: 1.1.1
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
       set-cookie-parser: 2.7.2
     dev: false
 
-  /react-scripts@5.0.1(@babel/plugin-syntax-flow@7.28.6)(@babel/plugin-transform-react-jsx@7.28.6)(eslint@8.57.1)(react@19.2.3)(typescript@5.9.3):
+  /react-scripts@5.0.1(@babel/plugin-syntax-flow@7.28.6)(@babel/plugin-transform-react-jsx@7.28.6)(eslint@8.57.1)(react@19.2.4)(typescript@5.9.3):
     resolution: {integrity: sha512-8VAmEm/ZAwQzJ+GOMLbBsTdDKOpuZh7RPs0UymvBR2vRk4iZWCskjbFnxqjrzoIvlNNRZ3QJFx6/qDSi6zSnaQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -9445,7 +9445,7 @@ packages:
       postcss-normalize: 10.0.1(browserslist@4.28.0)(postcss@8.5.6)
       postcss-preset-env: 7.8.3(postcss@8.5.6)
       prompts: 2.4.2
-      react: 19.2.3
+      react: 19.2.4
       react-app-polyfill: 3.0.0
       react-dev-utils: 12.0.1(eslint@8.57.1)(typescript@5.9.3)(webpack@5.102.1)
       react-refresh: 0.11.0
@@ -9501,8 +9501,8 @@ packages:
       - yaml
     dev: false
 
-  /react@19.2.3:
-    resolution: {integrity: sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==}
+  /react@19.2.4:
+    resolution: {integrity: sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==}
     engines: {node: '>=0.10.0'}
     dev: false
 

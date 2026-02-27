@@ -52,7 +52,8 @@
       "sucrase>glob": "^11.1.0",
       "webpack-dev-server": "^5.2.1",
       "resolve-url-loader>postcss": "^8.4.31",
-      "qs": ">=6.14.1"
+      "qs": ">=6.14.1",
+      "jsonpath": "npm:@livereach/jsonpath@^1.2.3"
     }
   }
 }

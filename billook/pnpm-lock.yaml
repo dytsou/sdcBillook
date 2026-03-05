@@ -12,6 +12,7 @@ overrides:
   qs: '>=6.14.1'
   jsonpath: npm:@livereach/jsonpath@^1.2.3
   svgo@2.8.0: 2.8.1
+  serialize-javascript@6.0.2: 7.0.3
 
 dependencies:
   '@testing-library/jest-dom':
@@ -4439,7 +4440,7 @@ packages:
       jest-worker: 27.5.1
       postcss: 8.5.6
       schema-utils: 4.3.3
-      serialize-javascript: 6.0.2
+      serialize-javascript: 7.0.3
       source-map: 0.6.1
       webpack: 5.105.0
     dev: false
@@ -9963,10 +9964,9 @@ packages:
       randombytes: 2.1.0
     dev: false
 
-  /serialize-javascript@6.0.2:
-    resolution: {integrity: sha512-Saa1xPByTTq2gdeFZYLLo+RFE35NHZkAbqZeWNd3BpzppeVisAqpDjcp8dyf6uIvEqJRd46jemmyA4iFIeVk8g==}
-    dependencies:
-      randombytes: 2.1.0
+  /serialize-javascript@7.0.3:
+    resolution: {integrity: sha512-h+cZ/XXarqDgCjo+YSyQU/ulDEESGGf8AMK9pPNmhNSl/FzPl6L8pMp1leca5z6NuG6tvV/auC8/43tmovowww==}
+    engines: {node: '>=20.0.0'}
     dev: false
 
   /serve-index@1.9.1:
@@ -10618,7 +10618,7 @@ packages:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
-      serialize-javascript: 6.0.2
+      serialize-javascript: 7.0.3
       terser: 5.44.1
       webpack: 5.105.0
     dev: false
@@ -10642,7 +10642,7 @@ packages:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
-      serialize-javascript: 6.0.2
+      serialize-javascript: 7.0.3
       terser: 5.46.0
       webpack: 5.105.0
     dev: false

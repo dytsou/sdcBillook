@@ -44,6 +44,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.1",
+    "baseline-browser-mapping": "^2.10.0",
     "tailwindcss": "^4.2.1"
   },
   "pnpm": {
@@ -53,7 +54,10 @@
       "webpack-dev-server": "^5.2.1",
       "resolve-url-loader>postcss": "^8.4.31",
       "qs": ">=6.14.1",
-      "jsonpath": "npm:@livereach/jsonpath@^1.2.3"
+      "jsonpath": "npm:@livereach/jsonpath@^1.2.3",
+      "svgo@2.8.0": "2.8.1",
+      "serialize-javascript@6.0.2": "7.0.3",
+      "underscore@1.13.6": "1.13.8"
     }
   }
 }

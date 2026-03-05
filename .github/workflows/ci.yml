@@ -4,34 +4,34 @@ permissions:
 
 on:
   push:
-    branches: [ main, master, develop ]
+    branches: [main, master, develop]
   pull_request:
-    branches: [ main, master, develop ]
+    branches: [main, master, develop]
 
 jobs:
   backend:
     name: Backend Tests
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 8
-      
+
       - name: Verify pnpm installation
         run: pnpm --version
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'pnpm'
+          node-version: "18"
+          cache: "pnpm"
           cache-dependency-path: backend/pnpm-lock.yaml
-      
+
       - name: Verify packageManager field
         working-directory: ./backend
         run: |
@@ -43,16 +43,16 @@ jobs:
               echo "⚠ packageManager field is missing or incorrect: $PACKAGE_MANAGER"
             fi
           fi
-      
+
       - name: Install dependencies
         working-directory: ./backend
         run: pnpm install --frozen-lockfile
-      
+
       - name: Run tests
         working-directory: ./backend
         run: pnpm test
         continue-on-error: true
-      
+
       - name: Check if app starts
         working-directory: ./backend
         run: |
@@ -62,26 +62,26 @@ jobs:
   frontend:
     name: Frontend Tests
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 8
-      
+
       - name: Verify pnpm installation
         run: pnpm --version
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'pnpm'
+          node-version: "18"
+          cache: "pnpm"
           cache-dependency-path: billook/pnpm-lock.yaml
-      
+
       - name: Verify packageManager field
         working-directory: ./billook
         run: |
@@ -93,44 +93,46 @@ jobs:
               echo "⚠ packageManager field is missing or incorrect: $PACKAGE_MANAGER"
             fi
           fi
-      
+
       - name: Install dependencies
         working-directory: ./billook
         run: pnpm install --frozen-lockfile
-      
+
       - name: Run tests
         working-directory: ./billook
         run: pnpm test -- --watchAll=false --coverage --ci
         env:
           CI: true
-      
+
       - name: Build application
         working-directory: ./billook
         run: pnpm run build
+        env:
+          NODE_OPTIONS: "--require ./scripts/polyfill-crypto.cjs"
 
   lint:
     name: Lint Check
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 8
-      
+
       - name: Verify pnpm installation
         run: pnpm --version
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'pnpm'
+          node-version: "18"
+          cache: "pnpm"
           cache-dependency-path: billook/pnpm-lock.yaml
-      
+
       - name: Verify packageManager field
         working-directory: ./billook
         run: |
@@ -142,11 +144,11 @@ jobs:
               echo "packageManager field is missing or incorrect: $PACKAGE_MANAGER"
             fi
           fi
-      
+
       - name: Install frontend dependencies
         working-directory: ./billook
         run: pnpm install --frozen-lockfile
-      
+
       - name: Run ESLint (if configured)
         working-directory: ./billook
         run: |
@@ -156,4 +158,3 @@ jobs:
             echo "ESLint not configured, skipping..."
           fi
         continue-on-error: true
-

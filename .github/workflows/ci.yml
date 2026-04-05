@@ -18,9 +18,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320
         with:
-          version: 8
+          version: 8.15.0
 
       - name: Verify pnpm installation
         run: pnpm --version
@@ -68,9 +68,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320
         with:
-          version: 8
+          version: 8.15.0
 
       - name: Verify pnpm installation
         run: pnpm --version
@@ -119,9 +119,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320
         with:
-          version: 8
+          version: 8.15.0
 
       - name: Verify pnpm installation
         run: pnpm --version

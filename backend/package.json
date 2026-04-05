@@ -36,7 +36,8 @@
   },
   "pnpm": {
     "overrides": {
-      "glob": "^11.1.0"
+      "glob": "^11.1.0",
+      "path-to-regexp@8.3.0": "8.4.0"
     }
   },
   "jest": {

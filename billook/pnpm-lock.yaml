@@ -51,8 +51,8 @@ dependencies:
     specifier: ^5.0.1
     version: 5.0.1(@babel/plugin-syntax-flow@7.28.6)(@babel/plugin-transform-react-jsx@7.28.6)(eslint@8.57.1)(react@19.2.4)(tslib@2.8.1)(typescript@6.0.2)
   web-vitals:
-    specifier: ^5.1.0
-    version: 5.1.0
+    specifier: ^5.2.0
+    version: 5.2.0
   ws:
     specifier: ^8.19.0
     version: 8.19.0
@@ -11125,8 +11125,8 @@ packages:
       minimalistic-assert: 1.0.1
     dev: false
 
-  /web-vitals@5.1.0:
-    resolution: {integrity: sha512-ArI3kx5jI0atlTtmV0fWU3fjpLmq/nD3Zr1iFFlJLaqa5wLBkUSzINwBPySCX/8jRyjlmy1Volw1kz1g9XE4Jg==}
+  /web-vitals@5.2.0:
+    resolution: {integrity: sha512-i2z98bEmaCqSDiHEDu+gHl/dmR4Q+TxFmG3/13KkMO+o8UxQzCqWaDRCiLgEa41nlO4VpXSI0ASa1xWmO9sBlA==}
     dev: false
 
   /webidl-conversions@4.0.2:

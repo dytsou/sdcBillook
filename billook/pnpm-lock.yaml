@@ -45,8 +45,8 @@ dependencies:
     specifier: ^5.2.1
     version: 5.6.0(react@19.2.4)
   react-router-dom:
-    specifier: ^7.13.1
-    version: 7.13.1(react-dom@19.2.4)(react@19.2.4)
+    specifier: ^7.14.0
+    version: 7.14.0(react-dom@19.2.4)(react@19.2.4)
   react-scripts:
     specifier: ^5.0.1
     version: 5.0.1(@babel/plugin-syntax-flow@7.28.6)(@babel/plugin-transform-react-jsx@7.28.6)(eslint@8.57.1)(react@19.2.4)(tslib@2.8.1)(typescript@6.0.2)
@@ -9496,8 +9496,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /react-router-dom@7.13.1(react-dom@19.2.4)(react@19.2.4):
-    resolution: {integrity: sha512-UJnV3Rxc5TgUPJt2KJpo1Jpy0OKQr0AjgbZzBFjaPJcFOb2Y8jA5H3LT8HUJAiRLlWrEXWHbF1Z4SCZaQjWDHw==}
+  /react-router-dom@7.14.0(react-dom@19.2.4)(react@19.2.4):
+    resolution: {integrity: sha512-2G3ajSVSZMEtmTjIklRWlNvo8wICEpLihfD/0YMDxbWK2UyP5EGfnoIn9AIQGnF3G/FX0MRbHXdFcD+rL1ZreQ==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
@@ -9505,11 +9505,11 @@ packages:
     dependencies:
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
-      react-router: 7.13.1(react-dom@19.2.4)(react@19.2.4)
+      react-router: 7.14.0(react-dom@19.2.4)(react@19.2.4)
     dev: false
 
-  /react-router@7.13.1(react-dom@19.2.4)(react@19.2.4):
-    resolution: {integrity: sha512-td+xP4X2/6BJvZoX6xw++A2DdEi++YypA69bJUV5oVvqf6/9/9nNlD70YO1e9d3MyamJEBQFEzk6mbfDYbqrSA==}
+  /react-router@7.14.0(react-dom@19.2.4)(react@19.2.4):
+    resolution: {integrity: sha512-m/xR9N4LQLmAS0ZhkY2nkPA1N7gQ5TUVa5n8TgANuDTARbn1gt+zLPXEm7W0XDTbrQ2AJSJKhoa6yx1D8BcpxQ==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'

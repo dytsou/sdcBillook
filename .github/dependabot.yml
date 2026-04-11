@@ -30,4 +30,9 @@ updates:
       include: "scope"
     labels:
       - "dependencies"
+    groups:
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
 

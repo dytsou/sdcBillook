@@ -42,7 +42,7 @@ dependencies:
     specifier: ^19.2.6
     version: 19.2.6(react@19.2.6)
   react-icons:
-    specifier: ^5.2.1
+    specifier: ^5.6.0
     version: 5.6.0(react@19.2.6)
   react-router-dom:
     specifier: ^7.15.0
@@ -2455,7 +2455,7 @@ packages:
       tsyringe: 4.10.0
     dev: false
 
-  /@pmmmwh/react-refresh-webpack-plugin@0.5.17(react-refresh@0.11.0)(webpack-dev-server@5.2.3)(webpack@5.105.4):
+  /@pmmmwh/react-refresh-webpack-plugin@0.5.17(react-refresh@0.11.0)(webpack-dev-server@5.2.4)(webpack@5.105.4):
     resolution: {integrity: sha512-tXDyE1/jzFsHXjhRZQ3hMl0IVhYe5qula43LDWIhVfjp9G/nT5OQY5AORVOrkEGAUltBJOfOWeETbmhm6kHhuQ==}
     engines: {node: '>= 10.13'}
     peerDependencies:
@@ -2490,7 +2490,7 @@ packages:
       schema-utils: 4.3.3
       source-map: 0.7.6
       webpack: 5.105.4
-      webpack-dev-server: 5.2.3(tslib@2.8.1)(webpack@5.105.4)
+      webpack-dev-server: 5.2.4(tslib@2.8.1)(webpack@5.105.4)
     dev: false
 
   /@rollup/plugin-babel@5.3.1(@babel/core@7.29.0)(rollup@2.80.0):
@@ -9537,7 +9537,7 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.29.0
-      '@pmmmwh/react-refresh-webpack-plugin': 0.5.17(react-refresh@0.11.0)(webpack-dev-server@5.2.3)(webpack@5.105.4)
+      '@pmmmwh/react-refresh-webpack-plugin': 0.5.17(react-refresh@0.11.0)(webpack-dev-server@5.2.4)(webpack@5.105.4)
       '@svgr/webpack': 5.5.0
       babel-jest: 27.5.1(@babel/core@7.29.0)
       babel-loader: 8.4.1(@babel/core@7.29.0)(webpack@5.105.4)
@@ -9582,7 +9582,7 @@ packages:
       terser-webpack-plugin: 5.3.17(webpack@5.105.4)
       typescript: 6.0.3
       webpack: 5.105.4
-      webpack-dev-server: 5.2.3(tslib@2.8.1)(webpack@5.105.4)
+      webpack-dev-server: 5.2.4(tslib@2.8.1)(webpack@5.105.4)
       webpack-manifest-plugin: 4.1.1(webpack@5.105.4)
       workbox-webpack-plugin: 6.6.0(webpack@5.105.4)
     optionalDependencies:
@@ -11168,8 +11168,8 @@ packages:
       - tslib
     dev: false
 
-  /webpack-dev-server@5.2.3(tslib@2.8.1)(webpack@5.105.4):
-    resolution: {integrity: sha512-9Gyu2F7+bg4Vv+pjbovuYDhHX+mqdqITykfzdM9UyKqKHlsE5aAjRhR+oOEfXW5vBeu8tarzlJFIZva4ZjAdrQ==}
+  /webpack-dev-server@5.2.4(tslib@2.8.1)(webpack@5.105.4):
+    resolution: {integrity: sha512-GqDPGZN9bRqKBTkp4aWkobDDHMsrXKoGSdOH56smIri8qR0JG8gfL8/v/f/OZR3/OKXjG8uwJbFVhKm/FNU/UA==}
     engines: {node: '>= 18.12.0'}
     hasBin: true
     peerDependencies:

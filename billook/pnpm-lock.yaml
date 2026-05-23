@@ -54,8 +54,8 @@ dependencies:
     specifier: ^5.2.0
     version: 5.2.0
   ws:
-    specifier: ^8.20.0
-    version: 8.20.0
+    specifier: ^8.20.1
+    version: 8.20.1
 
 devDependencies:
   '@tailwindcss/postcss':
@@ -7494,7 +7494,7 @@ packages:
       whatwg-encoding: 1.0.5
       whatwg-mimetype: 2.3.0
       whatwg-url: 8.7.0
-      ws: 7.5.10
+      ws: 7.5.11
       xml-name-validator: 3.0.0
     transitivePeerDependencies:
       - bufferutil
@@ -11209,7 +11209,7 @@ packages:
       spdy: 4.0.2
       webpack: 5.105.4
       webpack-dev-middleware: 7.4.5(tslib@2.8.1)(webpack@5.105.4)
-      ws: 8.20.0
+      ws: 8.20.1
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -11596,8 +11596,8 @@ packages:
       typedarray-to-buffer: 3.1.5
     dev: false
 
-  /ws@7.5.10:
-    resolution: {integrity: sha512-+dbF1tHwZpXcbOJdVOkzLDxZP1ailvSxM6ZweXTegylPny803bFhA+vqBYw4s31NSAk4S2Qz+AKXK9a4wkdjcQ==}
+  /ws@7.5.11:
+    resolution: {integrity: sha512-zS54Oen9bITtp7kp2XM3AydrCIq1D+HwJOuH+c+e4LfpL/lotP5osijd+UoMnxwAam1GN8R4KtLAyIrIcBNpiA==}
     engines: {node: '>=8.3.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -11609,8 +11609,8 @@ packages:
         optional: true
     dev: false
 
-  /ws@8.20.0:
-    resolution: {integrity: sha512-sAt8BhgNbzCtgGbt2OxmpuryO63ZoDk/sqaB/znQm94T4fCEsy/yV+7CdC1kJhOU9lboAEU7R3kquuycDoibVA==}
+  /ws@8.20.1:
+    resolution: {integrity: sha512-It4dO0K5v//JtTXuPkfEOaI3uUN87iYPnqo/ZzqCoG3g8uhA66QUMs/SrM0YK7/NAu+r4LMh/9dq2A7k+rHs+w==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1

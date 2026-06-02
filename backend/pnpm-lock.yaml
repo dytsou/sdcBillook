@@ -41,7 +41,7 @@ dependencies:
     version: 9.0.3
   mongoose:
     specifier: ^9.0.0
-    version: 9.6.2
+    version: 9.6.3
   nodemon:
     specifier: ^3.1.0
     version: 3.1.14
@@ -2727,8 +2727,8 @@ packages:
       mongodb-connection-string-url: 7.0.1
     dev: false
 
-  /mongoose@9.6.2:
-    resolution: {integrity: sha512-7m8HntjkoRnwEmuPC0kdlwcZXJOQf4twumFj+PNzg/anqqZE2Er7hQslqyzy07mP3JcFjoTSgH5765PyqOXsxw==}
+  /mongoose@9.6.3:
+    resolution: {integrity: sha512-vI6dTTlQnfMCyyQ5TrvhG0bCRs4dq5e1uFNPtOOWsOhn0fSg8AoIHjfyyCYr8aybyvPs845dRHGxsC3w/fHcBA==}
     engines: {node: '>=20.19.0'}
     dependencies:
       kareem: 3.3.0

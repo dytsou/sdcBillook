@@ -22,7 +22,7 @@ dependencies:
     version: 6.9.1
   '@testing-library/react':
     specifier: ^16.3.2
-    version: 16.3.2(@testing-library/dom@10.4.1)(react-dom@19.2.6)(react@19.2.6)
+    version: 16.3.2(@testing-library/dom@10.4.1)(react-dom@19.2.7)(react@19.2.7)
   '@testing-library/user-event':
     specifier: ^14.6.1
     version: 14.6.1(@testing-library/dom@10.4.1)
@@ -31,25 +31,25 @@ dependencies:
     version: 3.0.3
   nth-check:
     specifier: ^2.1.1
-    version: 3.0.1
+    version: 2.1.1
   postcss:
     specifier: ^8.5.15
     version: 8.5.15
   react:
-    specifier: ^19.2.6
-    version: 19.2.6
+    specifier: ^19.2.7
+    version: 19.2.7
   react-dom:
-    specifier: ^19.2.6
-    version: 19.2.6(react@19.2.6)
+    specifier: ^19.2.7
+    version: 19.2.7(react@19.2.7)
   react-icons:
     specifier: ^5.2.1
-    version: 5.6.0(react@19.2.6)
+    version: 5.6.0(react@19.2.7)
   react-router-dom:
     specifier: ^7.17.0
-    version: 7.17.0(react-dom@19.2.6)(react@19.2.6)
+    version: 7.17.0(react-dom@19.2.7)(react@19.2.7)
   react-scripts:
     specifier: ^5.0.1
-    version: 5.0.1(@babel/plugin-syntax-flow@7.29.7)(@babel/plugin-transform-react-jsx@7.29.7)(eslint@8.57.1)(react@19.2.6)(tslib@2.8.1)(typescript@6.0.3)
+    version: 5.0.1(@babel/plugin-syntax-flow@7.29.7)(@babel/plugin-transform-react-jsx@7.29.7)(eslint@8.57.1)(react@19.2.7)(tslib@2.8.1)(typescript@6.0.3)
   web-vitals:
     specifier: ^5.3.0
     version: 5.3.0
@@ -3004,7 +3004,7 @@ packages:
       redent: 3.0.0
     dev: false
 
-  /@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(react-dom@19.2.6)(react@19.2.6):
+  /@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(react-dom@19.2.7)(react@19.2.7):
     resolution: {integrity: sha512-XU5/SytQM+ykqMnAnvB2umaJNIOsLF3PVv//1Ew4CTcpz0/BRyy/af40qqrt7SjKpDdT1saBMc42CUok5gaw+g==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -3021,8 +3021,8 @@ packages:
     dependencies:
       '@babel/runtime': 7.28.6
       '@testing-library/dom': 10.4.1
-      react: 19.2.6
-      react-dom: 19.2.6(react@19.2.6)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
     dev: false
 
   /@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1):
@@ -4204,11 +4204,6 @@ packages:
 
   /boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
-    dev: false
-
-  /boolbase@2.0.0:
-    resolution: {integrity: sha512-DkVaaQHymRhpYEYo9x1oo7Q7B0Y6KJUsjm3c9eTyFDby4MHLBTwZ6ZDWBel5zrYxj1WsZgC5oLpiz+93MluXeA==}
-    engines: {node: '>=20.19.0'}
     dev: false
 
   /brace-expansion@1.1.13:
@@ -8278,13 +8273,6 @@ packages:
       boolbase: 1.0.0
     dev: false
 
-  /nth-check@3.0.1:
-    resolution: {integrity: sha512-GX0gsdbGVCgnRgbeGaubfjpBXyYRWOOCVeYh08bSQvDZqxz5ndXs1OTfAt/h36G1xvI94YIspsI0sVFqAV9+RQ==}
-    engines: {node: '>=20.19.0'}
-    dependencies:
-      boolbase: 2.0.0
-    dev: false
-
   /nwsapi@2.2.23:
     resolution: {integrity: sha512-7wfH4sLbt4M0gCDzGE6vzQBo0bfTKjU7Sfpqy/7gs1qBfYz2vEJH6vXcBKpO3+6Yu1telwd0t9HpyOoLEQQbIQ==}
     dev: false
@@ -9612,12 +9600,12 @@ packages:
       - vue-template-compiler
     dev: false
 
-  /react-dom@19.2.6(react@19.2.6):
-    resolution: {integrity: sha512-0prMI+hvBbPjsWnxDLxlCGyM8PN6UuWjEUCYmZhO67xIV9Xasa/r/vDnq+Xyq4Lo27g8QSbO5YzARu0D1Sps3g==}
+  /react-dom@19.2.7(react@19.2.7):
+    resolution: {integrity: sha512-t0BRVXvbiE/o20Hfw669rLbMCDWtYZLvmJigy2f0MxsXF+71pxhR3xOkspmsO8h3ZlNzyibAmtCa3l4lYKk6gQ==}
     peerDependencies:
-      react: ^19.2.6
+      react: ^19.2.7
     dependencies:
-      react: 19.2.6
+      react: 19.2.7
       scheduler: 0.27.0
     dev: false
 
@@ -9625,12 +9613,12 @@ packages:
     resolution: {integrity: sha512-SN/U6Ytxf1QGkw/9ve5Y+NxBbZM6Ht95tuXNMKs8EJyFa/Vy/+Co3stop3KBHARfn/giv+Lj1uUnTfOJ3moFEQ==}
     dev: false
 
-  /react-icons@5.6.0(react@19.2.6):
+  /react-icons@5.6.0(react@19.2.7):
     resolution: {integrity: sha512-RH93p5ki6LfOiIt0UtDyNg/cee+HLVR6cHHtW3wALfo+eOHTp8RnU2kRkI6E+H19zMIs03DyxUG/GfZMOGvmiA==}
     peerDependencies:
       react: '*'
     dependencies:
-      react: 19.2.6
+      react: 19.2.7
     dev: false
 
   /react-is@16.13.1:
@@ -9650,19 +9638,19 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /react-router-dom@7.17.0(react-dom@19.2.6)(react@19.2.6):
+  /react-router-dom@7.17.0(react-dom@19.2.7)(react@19.2.7):
     resolution: {integrity: sha512-fyU2yjGups/hE6Xz0I5ZYbVL8Gx29eCjgpHaRaTaVU+OOAdfRX05KsvyRm0GO8YQwOkhpU3MurW1jyMUJn+zSw==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
     dependencies:
-      react: 19.2.6
-      react-dom: 19.2.6(react@19.2.6)
-      react-router: 7.17.0(react-dom@19.2.6)(react@19.2.6)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+      react-router: 7.17.0(react-dom@19.2.7)(react@19.2.7)
     dev: false
 
-  /react-router@7.17.0(react-dom@19.2.6)(react@19.2.6):
+  /react-router@7.17.0(react-dom@19.2.7)(react@19.2.7):
     resolution: {integrity: sha512-FDELK7rTMlCHO5+reyXsPlmfr7N1F91lPHsWYfMEGQm/KQ+F4JFM8jGoeQDmDvdTs93Fw9aSilH+uKRb4/jXvQ==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
@@ -9673,12 +9661,12 @@ packages:
         optional: true
     dependencies:
       cookie: 1.1.1
-      react: 19.2.6
-      react-dom: 19.2.6(react@19.2.6)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
       set-cookie-parser: 2.7.2
     dev: false
 
-  /react-scripts@5.0.1(@babel/plugin-syntax-flow@7.29.7)(@babel/plugin-transform-react-jsx@7.29.7)(eslint@8.57.1)(react@19.2.6)(tslib@2.8.1)(typescript@6.0.3):
+  /react-scripts@5.0.1(@babel/plugin-syntax-flow@7.29.7)(@babel/plugin-transform-react-jsx@7.29.7)(eslint@8.57.1)(react@19.2.7)(tslib@2.8.1)(typescript@6.0.3):
     resolution: {integrity: sha512-8VAmEm/ZAwQzJ+GOMLbBsTdDKOpuZh7RPs0UymvBR2vRk4iZWCskjbFnxqjrzoIvlNNRZ3QJFx6/qDSi6zSnaQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -9722,7 +9710,7 @@ packages:
       postcss-normalize: 10.0.1(browserslist@4.28.1)(postcss@8.5.15)
       postcss-preset-env: 7.8.3(postcss@8.5.15)
       prompts: 2.4.2
-      react: 19.2.6
+      react: 19.2.7
       react-app-polyfill: 3.0.0
       react-dev-utils: 12.0.1(eslint@8.57.1)(typescript@6.0.3)(webpack@5.105.4)
       react-refresh: 0.11.0
@@ -9779,8 +9767,8 @@ packages:
       - yaml
     dev: false
 
-  /react@19.2.6:
-    resolution: {integrity: sha512-sfWGGfavi0xr8Pg0sVsyHMAOziVYKgPLNrS7ig+ivMNb3wbCBw3KxtflsGBAwD3gYQlE/AEZsTLgToRrSCjb0Q==}
+  /react@19.2.7:
+    resolution: {integrity: sha512-HNe9WslTbXmFK8o8cmwgAeJFSBvt1bPdHCVKtaaV+WlAN36mpT4hcRpwbf3fY56ar2oIXzsBpOAiIRHAdY0OlQ==}
     engines: {node: '>=0.10.0'}
     dev: false
 

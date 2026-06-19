@@ -41,7 +41,7 @@ dependencies:
     version: 9.0.3
   mongoose:
     specifier: ^9.0.0
-    version: 9.7.0
+    version: 9.7.1
   nodemon:
     specifier: ^3.1.0
     version: 3.1.14
@@ -378,8 +378,8 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@emnapi/core@1.11.0:
-    resolution: {integrity: sha512-l9Oo58x0HOP5znGzVhYW9U3e5wVuA4LAZU2AGezTmkhO1CgQRFDhDg4nneHsu/t3WniXg9QrG2nIXL/ZS8ln8Q==}
+  /@emnapi/core@1.11.1:
+    resolution: {integrity: sha512-RSvbQmHzdKzNsLYa/wHrbc3KN4sYLKAdPZxqiM2HATqv/SBk2/ENSHpvXGaLOMcsAyz0poEGqkmmKYG3OWiJEQ==}
     requiresBuild: true
     dependencies:
       '@emnapi/wasi-threads': 1.2.2
@@ -387,8 +387,8 @@ packages:
     dev: true
     optional: true
 
-  /@emnapi/runtime@1.11.0:
-    resolution: {integrity: sha512-55coeOFKHv1ywEcUXJtWU5f+Jr/W5tZDvZig8DLKSwUN1JpROQ4rk/SNOQiFWmaR/VKF4zuFyW1B8JduOSv6Pg==}
+  /@emnapi/runtime@1.11.1:
+    resolution: {integrity: sha512-vgj7R3y3Wgx24IQaGPA/R6YFXLHVMOZ0uVEyIQPaWs+rd1AzfEMXlAC22FYwO1XkKR6NPsq7mUandH8oIRdZFw==}
     requiresBuild: true
     dependencies:
       tslib: 2.8.1
@@ -750,8 +750,8 @@ packages:
     resolution: {integrity: sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ==}
     requiresBuild: true
     dependencies:
-      '@emnapi/core': 1.11.0
-      '@emnapi/runtime': 1.11.0
+      '@emnapi/core': 1.11.1
+      '@emnapi/runtime': 1.11.1
       '@tybys/wasm-util': 0.10.2
     dev: true
     optional: true
@@ -1256,8 +1256,8 @@ packages:
       node-int64: 0.4.0
     dev: true
 
-  /bson@7.2.0:
-    resolution: {integrity: sha512-YCEo7KjMlbNlyHhz7zAZNDpIpQbd+wOEHJYezv0nMYTn4x31eIUM2yomNNubclAt63dObUzKHWsBLJ9QcZNSnQ==}
+  /bson@7.3.0:
+    resolution: {integrity: sha512-WmjjMEwFwZHmGnAb7wn90MhkiT+mTm4x/rLj7dvAPWfwnVWDXhLun2e+UM88MJoDGW624yzZglVX/zTBy9ZZMw==}
     engines: {node: '>=20.19.0'}
     dev: false
 
@@ -2723,12 +2723,12 @@ packages:
         optional: true
     dependencies:
       '@mongodb-js/saslprep': 1.4.11
-      bson: 7.2.0
+      bson: 7.3.0
       mongodb-connection-string-url: 7.0.1
     dev: false
 
-  /mongoose@9.7.0:
-    resolution: {integrity: sha512-pkrLZ6U41pD4Ai0ju/FYL7o5I5k+rV3RZINQTG937hbhnLGKRuqqYm1Dlt/kTQ+M4FHijzV6JawzsdHKRGt7QA==}
+  /mongoose@9.7.1:
+    resolution: {integrity: sha512-rOCVA9ufRSdGTG6IdSqJa30avbaSBlI98zkv76xB+5xAzwCn4qvuKi26iE2BeAZrYYqcagjJRjmTA7+qEbSbYg==}
     engines: {node: '>=20.19.0'}
     dependencies:
       kareem: 3.3.0

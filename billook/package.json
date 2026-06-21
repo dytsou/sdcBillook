@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.1",
-    "baseline-browser-mapping": "^2.10.36",
+    "baseline-browser-mapping": "^2.10.38",
     "tailwindcss": "^4.3.1"
   },
   "pnpm": {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Login from './Login';
 import AuthContext from '../../Store/AuthContent';
@@ -44,7 +44,7 @@ describe('Login Component', () => {
       </AuthContext.Provider>
     );
 
-    const submitButton = screen.getAllByText(/sign in/i).find(el => el.closest('button'));
+    const submitButton = screen.getByRole('button', { name: /^sign in$/i });
     await userEvent.click(submitButton);
 
     expect(global.fetch).not.toHaveBeenCalled();
@@ -63,7 +63,7 @@ describe('Login Component', () => {
     await userEvent.type(emailInput, '   ');
     await userEvent.type(passwordInput, '   ');
 
-    const submitButton = screen.getAllByText(/sign in/i).find(el => el.closest('button'));
+    const submitButton = screen.getByRole('button', { name: /^sign in$/i });
     await userEvent.click(submitButton);
 
     expect(global.fetch).not.toHaveBeenCalled();
@@ -98,7 +98,7 @@ describe('Login Component', () => {
     await userEvent.type(emailInput, 'test@example.com');
     await userEvent.type(passwordInput, 'password123');
 
-    const submitButton = screen.getAllByText(/sign in/i).find(el => el.closest('button'));
+    const submitButton = screen.getByRole('button', { name: /^sign in$/i });
     await userEvent.click(submitButton);
 
     await waitFor(() => {
@@ -138,7 +138,7 @@ describe('Login Component', () => {
     await userEvent.type(emailInput, 'test@example.com');
     await userEvent.type(passwordInput, 'wrongpassword');
 
-    const submitButton = screen.getAllByText(/sign in/i).find(el => el.closest('button'));
+    const submitButton = screen.getByRole('button', { name: /^sign in$/i });
     await userEvent.click(submitButton);
 
     await waitFor(() => {
@@ -165,7 +165,7 @@ describe('Login Component', () => {
     await userEvent.type(emailInput, 'test@example.com');
     await userEvent.type(passwordInput, 'password123');
 
-    const submitButton = screen.getAllByText(/sign in/i).find(el => el.closest('button'));
+    const submitButton = screen.getByRole('button', { name: /^sign in$/i });
     await userEvent.click(submitButton);
 
     await waitFor(() => {

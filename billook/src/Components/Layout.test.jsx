@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Layout from './Layout';
 
 // Mock Navbar component
@@ -13,9 +13,9 @@ jest.mock('./Navbar', () => {
 jest.mock('react-router-dom');
 
 test('Layout renders Navbar and Outlet', () => {
-  const { getByTestId } = render(<Layout />);
+  render(<Layout />);
 
-  expect(getByTestId('navbar')).toBeInTheDocument();
-  expect(getByTestId('outlet')).toBeInTheDocument();
+  expect(screen.getByTestId('navbar')).toBeInTheDocument();
+  expect(screen.getByTestId('outlet')).toBeInTheDocument();
 });
 

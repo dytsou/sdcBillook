@@ -1,5 +1,6 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
+import App from './App';
 
 // Mock react-router-dom using manual mock
 jest.mock('react-router-dom');
@@ -41,11 +42,9 @@ jest.mock('./Pages/Authentication/SignUp', () => {
   };
 });
 
-import App from './App';
-
 test('App renders without crashing', () => {
-  const { getByTestId } = render(<App />);
-  expect(getByTestId('router')).toBeInTheDocument();
+  render(<App />);
+  expect(screen.getByTestId('router')).toBeInTheDocument();
 });
 
 test('App provides AuthContext', () => {

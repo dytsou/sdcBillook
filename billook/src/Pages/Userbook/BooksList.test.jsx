@@ -32,13 +32,13 @@ test('BooksList renders when user is not logged in', () => {
     logout: jest.fn()
   };
 
-  const { getByText } = render(
+  render(
     <AuthContext.Provider value={mockAuth}>
       <BooksList />
     </AuthContext.Provider>
   );
 
-  expect(getByText(/please login to view your book/i)).toBeInTheDocument();
+  expect(screen.getByText(/please login to view your book/i)).toBeInTheDocument();
 });
 
 test('BooksList renders when user is logged in', async () => {

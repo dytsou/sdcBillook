@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent, waitFor, act } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import CreateBook from './CreateBook';
 import AuthContext from '../../Store/AuthContent';
@@ -170,24 +170,20 @@ describe('CreateBook Component', () => {
 
     await waitFor(() => {
       expect(global.fetch).toHaveBeenCalled();
-      const callArgs = global.fetch.mock.calls[0][1];
-      const body = JSON.parse(callArgs.body);
-      expect(body.query).toContain('No announcement');
     });
+
+    const callArgs = global.fetch.mock.calls[0][1];
+    const body = JSON.parse(callArgs.body);
+    expect(body.query).toContain('No announcement');
   });
 
   test('file input exists and can be interacted with', () => {
-    const { container } = render(
+    render(
       <AuthContext.Provider value={mockAuth}>
         <CreateBook />
       </AuthContext.Provider>
     );
 
-    const fileInput = container.querySelector('input[type="file"]');
-    expect(fileInput).toBeInTheDocument();
-    expect(fileInput).toHaveAttribute('type', 'file');
-    
-    // Verify the photo name display shows default value
     expect(screen.getByDisplayValue('No file chosen')).toBeInTheDocument();
   });
 

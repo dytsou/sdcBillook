@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import SignUp from './SignUp';
 
@@ -28,7 +28,7 @@ describe('SignUp Component', () => {
   test('form submission with empty fields does not call API', async () => {
     render(<SignUp />);
 
-    const submitButton = screen.getAllByText(/sign up/i).find(el => el.closest('button'));
+    const submitButton = screen.getByRole('button', { name: /^sign up$/i });
     await userEvent.click(submitButton);
 
     expect(global.fetch).not.toHaveBeenCalled();
@@ -45,7 +45,7 @@ describe('SignUp Component', () => {
     await userEvent.type(usernameInput, '   ');
     await userEvent.type(passwordInput, '   ');
 
-    const submitButton = screen.getAllByText(/sign up/i).find(el => el.closest('button'));
+    const submitButton = screen.getByRole('button', { name: /^sign up$/i });
     await userEvent.click(submitButton);
 
     expect(global.fetch).not.toHaveBeenCalled();
@@ -75,7 +75,7 @@ describe('SignUp Component', () => {
     await userEvent.type(usernameInput, 'testuser');
     await userEvent.type(passwordInput, 'password123');
 
-    const submitButton = screen.getAllByText(/sign up/i).find(el => el.closest('button'));
+    const submitButton = screen.getByRole('button', { name: /^sign up$/i });
     await userEvent.click(submitButton);
 
     await new Promise(resolve => setTimeout(resolve, 100));
@@ -106,7 +106,7 @@ describe('SignUp Component', () => {
     await userEvent.type(usernameInput, 'testuser');
     await userEvent.type(passwordInput, 'password123');
 
-    const submitButton = screen.getAllByText(/sign up/i).find(el => el.closest('button'));
+    const submitButton = screen.getByRole('button', { name: /^sign up$/i });
     await userEvent.click(submitButton);
 
     await new Promise(resolve => setTimeout(resolve, 100));

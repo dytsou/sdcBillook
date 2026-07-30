@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Homepage from './Homepage';
 import AuthContext from '../../Store/AuthContent';
 
@@ -24,13 +24,13 @@ test('Homepage renders when user is not logged in', () => {
     logout: jest.fn()
   };
 
-  const { queryByTestId } = render(
+  render(
     <AuthContext.Provider value={mockAuth}>
       <Homepage />
     </AuthContext.Provider>
   );
 
-  expect(queryByTestId('create-book')).not.toBeInTheDocument();
+  expect(screen.queryByTestId('create-book')).not.toBeInTheDocument();
 });
 
 test('Homepage renders CreateBook when user is logged in', () => {
@@ -42,12 +42,12 @@ test('Homepage renders CreateBook when user is logged in', () => {
     logout: jest.fn()
   };
 
-  const { getByTestId } = render(
+  render(
     <AuthContext.Provider value={mockAuth}>
       <Homepage />
     </AuthContext.Provider>
   );
 
-  expect(getByTestId('create-book')).toBeInTheDocument();
+  expect(screen.getByTestId('create-book')).toBeInTheDocument();
 });
 

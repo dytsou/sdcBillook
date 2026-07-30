@@ -33,16 +33,16 @@ dependencies:
     specifier: ^2.1.1
     version: 2.1.1
   postcss:
-    specifier: ^8.5.18
+    specifier: ^8.5.25
     version: 8.5.25
   react:
-    specifier: ^19.2.7
+    specifier: ^19.2.8
     version: 19.2.8
   react-dom:
-    specifier: ^19.2.7
+    specifier: ^19.2.8
     version: 19.2.8(react@19.2.8)
   react-icons:
-    specifier: ^5.2.1
+    specifier: ^5.7.0
     version: 5.7.0(react@19.2.8)
   react-router-dom:
     specifier: ^7.18.1
@@ -54,18 +54,18 @@ dependencies:
     specifier: ^6.0.1
     version: 6.0.1
   ws:
-    specifier: ^8.21.0
+    specifier: ^8.21.1
     version: 8.21.1
 
 devDependencies:
   '@tailwindcss/postcss':
-    specifier: ^4.3.1
+    specifier: ^4.3.3
     version: 4.3.3
   baseline-browser-mapping:
-    specifier: ^2.10.36
+    specifier: ^2.11.7
     version: 2.11.8
   tailwindcss:
-    specifier: ^4.3.1
+    specifier: ^4.3.3
     version: 4.3.3
 
 packages:

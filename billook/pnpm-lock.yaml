@@ -33,7 +33,7 @@ dependencies:
     specifier: ^2.1.1
     version: 2.1.1
   postcss:
-    specifier: ^8.5.25
+    specifier: ^8.5.18
     version: 8.5.25
   react:
     specifier: ^19.2.7
@@ -42,7 +42,7 @@ dependencies:
     specifier: ^19.2.7
     version: 19.2.7(react@19.2.7)
   react-icons:
-    specifier: ^5.7.0
+    specifier: ^5.2.1
     version: 5.7.0(react@19.2.7)
   react-router-dom:
     specifier: ^7.18.1
@@ -54,7 +54,7 @@ dependencies:
     specifier: ^5.3.0
     version: 5.3.0
   ws:
-    specifier: ^8.21.1
+    specifier: ^8.21.0
     version: 8.21.1
 
 devDependencies:
@@ -62,11 +62,11 @@ devDependencies:
     specifier: ^4.3.1
     version: 4.3.1
   baseline-browser-mapping:
-    specifier: ^2.11.7
+    specifier: ^2.10.36
     version: 2.11.8
   tailwindcss:
-    specifier: ^4.3.1
-    version: 4.3.1
+    specifier: ^4.3.3
+    version: 4.3.3
 
 packages:
 
@@ -10811,6 +10811,10 @@ packages:
 
   /tailwindcss@4.3.1:
     resolution: {integrity: sha512-hk+TB1m+K8CYNrP6rjQaq/Y+4Zylwpa87mLYBKCunwnnQ9p+fHb7kmSfGqyEJoxF/O6CDyABWVFEafNSYKll+Q==}
+    dev: true
+
+  /tailwindcss@4.3.3:
+    resolution: {integrity: sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==}
     dev: true
 
   /tapable@1.1.3:

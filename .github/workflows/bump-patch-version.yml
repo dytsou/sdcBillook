@@ -89,5 +89,5 @@ jobs:
 
             Triggered manually from [bump-patch-version](https://github.com/${{ github.repository }}/actions/workflows/bump-patch-version.yml).
 
-            After merge, the [Publish](https://github.com/${{ github.repository }}/actions/workflows/publish.yml) workflow can publish the new version when it runs on `main`.
+            After merge, the [Release](https://github.com/${{ github.repository }}/actions/workflows/release.yml) workflow tags and publishes the GitHub release when it runs on `main`.
           labels: "ci, maintenance"

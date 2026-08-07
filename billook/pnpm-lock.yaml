@@ -15,6 +15,7 @@ overrides:
   serialize-javascript@4.0.0: 7.0.3
   serialize-javascript@6.0.2: 7.0.3
   underscore@1.13.6: 1.13.8
+  typescript: 6.0.3
 
 dependencies:
   '@testing-library/jest-dom':
@@ -6070,7 +6071,7 @@ packages:
     engines: {node: '>=10', yarn: '>=1.0.0'}
     peerDependencies:
       eslint: '>= 6'
-      typescript: '>= 2.7'
+      typescript: 6.0.3
       vue-template-compiler: '*'
       webpack: '>= 4'
     peerDependenciesMeta:
@@ -9568,7 +9569,7 @@ packages:
     resolution: {integrity: sha512-84Ivxmr17KjUupyqzFode6xKhjwuEJDROWKJy/BthkL7Wn6NJ8h4WE6k/exAv6ImS+0oZLRRW5j/aINMHyeGeQ==}
     engines: {node: '>=14'}
     peerDependencies:
-      typescript: '>=2.7'
+      typescript: 6.0.3
       webpack: '>=4'
     peerDependenciesMeta:
       typescript:
@@ -9679,7 +9680,7 @@ packages:
     peerDependencies:
       eslint: '*'
       react: '>= 16'
-      typescript: ^3.2.1 || ^4
+      typescript: 6.0.3
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -10995,7 +10996,7 @@ packages:
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
     engines: {node: '>= 6'}
     peerDependencies:
-      typescript: '>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta'
+      typescript: 6.0.3
     dependencies:
       tslib: 1.14.1
       typescript: 6.0.3

@@ -58,7 +58,8 @@
       "svgo@2.8.0": "2.8.1",
       "serialize-javascript@4.0.0": "7.0.3",
       "serialize-javascript@6.0.2": "7.0.3",
-      "underscore@1.13.6": "1.13.8"
+      "underscore@1.13.6": "1.13.8",
+      "typescript": "6.0.3"
     }
   }
 }

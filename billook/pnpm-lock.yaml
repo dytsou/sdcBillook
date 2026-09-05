@@ -41,8 +41,8 @@ dependencies:
     specifier: ^7.0.1
     version: 7.0.1(@testing-library/dom@10.4.1)
   '@testing-library/react':
-    specifier: ^16.3.2
-    version: 16.3.2(@testing-library/dom@10.4.1)(react-dom@19.2.8)(react@19.2.8)
+    specifier: ^16.3.3
+    version: 16.3.3(@testing-library/dom@10.4.1)(react-dom@19.2.8)(react@19.2.8)
   '@testing-library/user-event':
     specifier: ^14.6.7
     version: 14.6.7(@testing-library/dom@10.4.1)
@@ -1644,11 +1644,6 @@ packages:
       - supports-color
     dev: false
 
-  /@babel/runtime@7.28.6:
-    resolution: {integrity: sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==}
-    engines: {node: '>=6.9.0'}
-    dev: false
-
   /@babel/runtime@7.29.7:
     resolution: {integrity: sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==}
     engines: {node: '>=6.9.0'}
@@ -3044,8 +3039,8 @@ packages:
       redent: 3.0.0
     dev: false
 
-  /@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(react-dom@19.2.8)(react@19.2.8):
-    resolution: {integrity: sha512-XU5/SytQM+ykqMnAnvB2umaJNIOsLF3PVv//1Ew4CTcpz0/BRyy/af40qqrt7SjKpDdT1saBMc42CUok5gaw+g==}
+  /@testing-library/react@16.3.3(@testing-library/dom@10.4.1)(react-dom@19.2.8)(react@19.2.8):
+    resolution: {integrity: sha512-Uo193NgQbPMz6lrrhtRQQFcMC6Re/ELLFbbuVL30WDlZxlpZf9/lMHTAVxPRLw1q1iu9OJmR1c2BLiENRstdBg==}
     engines: {node: '>=18'}
     peerDependencies:
       '@testing-library/dom': ^10.0.0
@@ -3059,7 +3054,7 @@ packages:
       '@types/react-dom':
         optional: true
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.7
       '@testing-library/dom': 10.4.1
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
@@ -4036,7 +4031,7 @@ packages:
     resolution: {integrity: sha512-Cg7TFGpIr01vOQNODXOOaGz2NpCU5gl8x1qJFbb6hbZxR7XrcE2vtbAsTAbJ7/xwJtUuJEw8K8Zr/AE0LHlesg==}
     engines: {node: '>=10', npm: '>=6'}
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.7
       cosmiconfig: 7.1.0
       resolve: 1.22.11
     dev: false
@@ -4152,7 +4147,7 @@ packages:
       '@babel/preset-env': 7.29.0(@babel/core@7.29.6)
       '@babel/preset-react': 7.28.5(@babel/core@7.29.6)
       '@babel/preset-typescript': 7.28.5(@babel/core@7.29.6)
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.7
       babel-plugin-macros: 3.1.0
       babel-plugin-transform-react-remove-prop-types: 0.4.24
     transitivePeerDependencies:
@@ -11428,7 +11423,7 @@ packages:
       '@apideck/better-ajv-errors': 0.3.6(ajv@8.18.0)
       '@babel/core': 7.29.6
       '@babel/preset-env': 7.29.0(@babel/core@7.29.6)
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.7
       '@rollup/plugin-babel': 5.3.1(@babel/core@7.29.6)(rollup@2.80.0)
       '@rollup/plugin-node-resolve': 11.2.1(rollup@2.80.0)
       '@rollup/plugin-replace': 2.4.2(rollup@2.80.0)

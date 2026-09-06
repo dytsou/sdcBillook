@@ -5,7 +5,7 @@
   "packageManager": "pnpm@8.15.0",
   "dependencies": {
     "@testing-library/jest-dom": "^7.0.1",
-    "@testing-library/react": "^16.3.2",
+    "@testing-library/react": "^16.3.3",
     "@testing-library/user-event": "^14.6.7",
     "braces": "^3.0.3",
     "nth-check": "^3.0.1",

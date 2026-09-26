@@ -39,19 +39,19 @@ overrides:
 dependencies:
   '@testing-library/jest-dom':
     specifier: ^7.0.1
-    version: 7.0.1(@testing-library/dom@10.4.1)
+    version: 7.0.1(@testing-library/dom@10.4.2)
   '@testing-library/react':
     specifier: ^16.3.3
-    version: 16.3.3(@testing-library/dom@10.4.1)(react-dom@19.2.8)(react@19.2.8)
+    version: 16.3.3(@testing-library/dom@10.4.2)(react-dom@19.2.8)(react@19.2.8)
   '@testing-library/user-event':
     specifier: ^14.6.7
-    version: 14.6.7(@testing-library/dom@10.4.1)
+    version: 14.6.7(@testing-library/dom@10.4.2)
   braces:
     specifier: ^3.0.3
     version: 3.0.3
   nth-check:
     specifier: ^2.1.1
-    version: 2.1.1
+    version: 3.0.1
   postcss:
     specifier: ^8.5.26
     version: 8.5.26
@@ -3006,8 +3006,8 @@ packages:
       tailwindcss: 4.3.3
     dev: true
 
-  /@testing-library/dom@10.4.1:
-    resolution: {integrity: sha512-o4PXJQidqJl82ckFaXUeoAW+XysPLauYI43Abki5hABd853iMhitooc6znOnczgbTYmEP6U6/y1ZyKAIsvMKGg==}
+  /@testing-library/dom@10.4.2:
+    resolution: {integrity: sha512-yzr2S9HyAIdhz2/6qHgbs665Q7PKVcDF05vsOlHPxG1mo36gKVesdYVeDLnXgfjJ03CrKRk08knc6+E/9m8v2Q==}
     engines: {node: '>=18'}
     dependencies:
       '@babel/code-frame': 7.29.7
@@ -3020,7 +3020,7 @@ packages:
       pretty-format: 27.5.1
     dev: false
 
-  /@testing-library/jest-dom@7.0.1(@testing-library/dom@10.4.1):
+  /@testing-library/jest-dom@7.0.1(@testing-library/dom@10.4.2):
     resolution: {integrity: sha512-oMDTC3oA+6CXSO2JZnvOI7CA6oVub6kij5ggk9ohwye5slmkwxYDXcPOVxgMw/RQlticjtO0C1RZkR97HgrWMw==}
     engines: {node: '>=22', npm: '>=6', yarn: '>=1'}
     peerDependencies:
@@ -3031,7 +3031,7 @@ packages:
         optional: true
     dependencies:
       '@adobe/css-tools': 4.5.0
-      '@testing-library/dom': 10.4.1
+      '@testing-library/dom': 10.4.2
       aria-query: 5.3.2
       css.escape: 1.5.1
       dom-accessibility-api: 0.6.3
@@ -3039,7 +3039,7 @@ packages:
       redent: 3.0.0
     dev: false
 
-  /@testing-library/react@16.3.3(@testing-library/dom@10.4.1)(react-dom@19.2.8)(react@19.2.8):
+  /@testing-library/react@16.3.3(@testing-library/dom@10.4.2)(react-dom@19.2.8)(react@19.2.8):
     resolution: {integrity: sha512-Uo193NgQbPMz6lrrhtRQQFcMC6Re/ELLFbbuVL30WDlZxlpZf9/lMHTAVxPRLw1q1iu9OJmR1c2BLiENRstdBg==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -3055,18 +3055,18 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.29.7
-      '@testing-library/dom': 10.4.1
+      '@testing-library/dom': 10.4.2
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
     dev: false
 
-  /@testing-library/user-event@14.6.7(@testing-library/dom@10.4.1):
+  /@testing-library/user-event@14.6.7(@testing-library/dom@10.4.2):
     resolution: {integrity: sha512-MPCpX8bxe8zS+JmmTwLp8jd0dy1rAm60Te/SL8JrQM3qvQJcBOs1d7IefJMyZzqM3EWBrDn/LWDt1BCGu4ASfg==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
     dependencies:
-      '@testing-library/dom': 10.4.1
+      '@testing-library/dom': 10.4.2
     dev: false
 
   /@tootallnate/once@2.0.1:
@@ -4220,6 +4220,11 @@ packages:
 
   /boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
+    dev: false
+
+  /boolbase@2.0.0:
+    resolution: {integrity: sha512-DkVaaQHymRhpYEYo9x1oo7Q7B0Y6KJUsjm3c9eTyFDby4MHLBTwZ6ZDWBel5zrYxj1WsZgC5oLpiz+93MluXeA==}
+    engines: {node: '>=20.19.0'}
     dev: false
 
   /brace-expansion@1.1.18:
@@ -8192,6 +8197,13 @@ packages:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
     dependencies:
       boolbase: 1.0.0
+    dev: false
+
+  /nth-check@3.0.1:
+    resolution: {integrity: sha512-GX0gsdbGVCgnRgbeGaubfjpBXyYRWOOCVeYh08bSQvDZqxz5ndXs1OTfAt/h36G1xvI94YIspsI0sVFqAV9+RQ==}
+    engines: {node: '>=20.19.0'}
+    dependencies:
+      boolbase: 2.0.0
     dev: false
 
   /nwsapi@2.2.23:

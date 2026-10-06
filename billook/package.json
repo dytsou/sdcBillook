@@ -8,15 +8,15 @@
     "@testing-library/react": "^16.3.3",
     "@testing-library/user-event": "^14.6.7",
     "braces": "^3.0.3",
-    "nth-check": "^3.0.1",
-    "postcss": "^8.5.28",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
+    "nth-check": "^2.1.1",
+    "postcss": "^8.5.29",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "react-icons": "^5.7.0",
-    "react-router-dom": "^7.18.3",
+    "react-router-dom": "^7.18.4",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^6.2.1",
-    "ws": "^8.21.3"
+    "web-vitals": "^6.2.3",
+    "ws": "^8.22.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
-    "baseline-browser-mapping": "^2.11.20",
+    "baseline-browser-mapping": "^2.11.27",
     "tailwindcss": "^4.3.3"
   },
   "pnpm": {

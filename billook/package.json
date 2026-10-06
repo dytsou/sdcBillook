@@ -8,7 +8,7 @@
     "@testing-library/react": "^16.3.3",
     "@testing-library/user-event": "^14.6.7",
     "braces": "^3.0.3",
-    "nth-check": "^2.1.1",
+    "nth-check": "^3.0.1",
     "postcss": "^8.5.29",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
@@ -49,7 +49,7 @@
   },
   "pnpm": {
     "overrides": {
-      "nth-check": "^2.1.1",
+      "nth-check": "^3.0.1",
       "sucrase>glob": "^11.1.0",
       "webpack-dev-server": "^5.2.6",
       "resolve-url-loader>postcss": "^8.4.31",

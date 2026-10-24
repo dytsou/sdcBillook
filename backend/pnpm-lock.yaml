@@ -30,7 +30,7 @@ dependencies:
     version: 2.3.0
   dotenv:
     specifier: ^18.0.5
-    version: 18.0.5
+    version: 18.0.8
   express:
     specifier: ^5.2.1
     version: 5.3.0
@@ -1641,8 +1641,8 @@ packages:
       wrappy: 1.0.2
     dev: true
 
-  /dotenv@18.0.5:
-    resolution: {integrity: sha512-aBrGvt6KhjxbEnatqMWOMidftwsrCiCvqh1yNIGB9QyF0J+VcWkKDMsvYOEm7ZS82oiV+BT1sTOtIlAmUlTpwQ==}
+  /dotenv@18.0.8:
+    resolution: {integrity: sha512-2KDeoFoK/zRtcnbunCDlLG5VWVMcyqeQc6iK65o231nfNAcuGrKoqUQfJFUtBI+QlShk5HKIHxwebBtUl3rEfA==}
     engines: {node: '>=12'}
     hasBin: true
     dev: false

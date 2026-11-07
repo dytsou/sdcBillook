@@ -86,8 +86,8 @@ devDependencies:
     specifier: ^2.11.34
     version: 2.11.34
   tailwindcss:
-    specifier: ^4.3.3
-    version: 4.3.3
+    specifier: ^4.3.4
+    version: 4.3.4
 
 packages:
 
@@ -10576,10 +10576,6 @@ packages:
       - tsx
       - yaml
     dev: false
-
-  /tailwindcss@4.3.3:
-    resolution: {integrity: sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==}
-    dev: true
 
   /tailwindcss@4.3.4:
     resolution: {integrity: sha512-PCJZTFFdG+sL3gvnP1Do9o6GbkvH2q0p04xSs3f7cSvmAeK+sttG+/7ncK1fdRwKFfC7n+wDDJaOMBSefkI9ow==}

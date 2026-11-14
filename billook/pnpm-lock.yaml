@@ -86,8 +86,8 @@ devDependencies:
     specifier: ^2.11.35
     version: 2.11.35
   tailwindcss:
-    specifier: ^4.3.4
-    version: 4.3.4
+    specifier: ^4.3.5
+    version: 4.3.5
 
 packages:
 

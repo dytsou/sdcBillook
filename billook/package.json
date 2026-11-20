@@ -16,7 +16,7 @@
     "react-router-dom": "^7.18.5",
     "react-scripts": "^5.0.1",
     "web-vitals": "^6.2.3",
-    "ws": "^8.22.2"
+    "ws": "^8.23.0"
   },
   "scripts": {
     "start": "react-scripts start",

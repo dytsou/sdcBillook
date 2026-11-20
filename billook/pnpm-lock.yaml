@@ -45,8 +45,8 @@ dependencies:
     specifier: ^16.3.3
     version: 16.3.3(@testing-library/dom@10.4.2)(react-dom@19.3.1)(react@19.3.1)
   '@testing-library/user-event':
-    specifier: ^14.6.9
-    version: 14.6.9(@testing-library/dom@10.4.2)
+    specifier: ^14.6.12
+    version: 14.6.12(@testing-library/dom@10.4.2)
   braces:
     specifier: ^3.0.3
     version: 3.0.3
@@ -2954,8 +2954,8 @@ packages:
       react-dom: 19.3.1(react@19.3.1)
     dev: false
 
-  /@testing-library/user-event@14.6.9(@testing-library/dom@10.4.2):
-    resolution: {integrity: sha512-/8boTjZHNXFi8JGUI2Ev05cq0Szh0OX35Bamkq6CK1ne+l1Xm8BKE3+nGgsnFgaYk0MX67Vh59cZDsNz5lJJEg==}
+  /@testing-library/user-event@14.6.12(@testing-library/dom@10.4.2):
+    resolution: {integrity: sha512-8yQV8v+eToBhsUO4oYrZY7fzhpTEMZx4IDx0/iuER/x0Xuy0NdqQOhsaaUNlvXE03N7vQ+4RCXUieKC0NJty9w==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
@@ -10585,10 +10585,6 @@ packages:
       - tsx
       - yaml
     dev: false
-
-  /tailwindcss@4.3.4:
-    resolution: {integrity: sha512-PCJZTFFdG+sL3gvnP1Do9o6GbkvH2q0p04xSs3f7cSvmAeK+sttG+/7ncK1fdRwKFfC7n+wDDJaOMBSefkI9ow==}
-    dev: true
 
   /tailwindcss@4.3.5:
     resolution: {integrity: sha512-FcQk9BuffmEHJP2G0XmB2SplU1aLTI7j07Kunk+U74Ny+XiWOtzXz9aujFZ/avntw1e2cOv/3PkgzflQ7gX2vQ==}
